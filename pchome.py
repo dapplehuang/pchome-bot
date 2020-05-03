@@ -3,17 +3,16 @@ from selenium.webdriver.common.keys import Keys
 from time import sleep
 from datetime import datetime
 import random
+from account import PCHOME_ACCOUNT, PCHOME_PASSWORD
 
 # test
-PRODUT_WEBSITE = 'https://24h.pchome.com.tw/prod/DAAN8E-A900AIH6O?fq=/A/144454'
+PRODUT_WEBSITE = 'https://24h.pchome.com.tw/prod/DAAN8E-A900AIH6O'
 
 # switch
-# PRODUT_WEBSITE = 'https://24h.pchome.com.tw/cdn/prod/DGBJCW-1900AJVIQ-000?fq=/S/DGBJDE'
+# PRODUT_WEBSITE = 'https://24h.pchome.com.tw/cdn/prod/DGBJCW-1900AJVIQ-000'
 
 LOGIN_WITH_PAGE= 'https://ecvip.pchome.com.tw/login/v3/login.htm?rurl=' + PRODUT_WEBSITE
 
-PCHOME_ACCOUNT = '1038790@gmail.com'
-PCHOME_PASSWORD= ''
 
 START_HOUR = 22
 START_MIN  = '41'

@@ -3,7 +3,7 @@ from selenium.webdriver.common.keys import Keys
 from time import sleep
 from datetime import datetime
 import random
-from ../account import PCHOME_ACCOUNT, PCHOME_PASSWORD
+from account import PCHOME_ACCOUNT, PCHOME_PASSWORD
 # preference
 PRE_WEBSITE = 'https://ecvip.pchome.com.tw/?0xbd4e346710df1d2def8ec7173f512bff6256cf55a33e2af66dee8e04adcd755d048ad1706961f2c54ab83701f9e653fc'
 

@@ -1,9 +1,12 @@
+import sys
+from os import path
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from time import sleep
 from datetime import datetime
 import random
-from ../account import PCHOME_ACCOUNT, PCHOME_PASSWORD
+from account import PCHOME_ACCOUNT, PCHOME_PASSWORD
+# from .. import account
 
 # test
 PRODUT_WEBSITE = 'https://24h.pchome.com.tw/prod/DGBJCW-1900AJVIQ'  # switch
@@ -35,7 +38,7 @@ class pchomebot():
             if t == '加入24h購物車':
                 print('Add it to the cart !!!!!')
                 break
-            r = random.randint(3, 30)
+            r = random.randint(50, 120)
             print('sold out, sleep ', r)
             sleep(r)
             self.driver.refresh()
