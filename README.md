@@ -18,7 +18,7 @@
 4. Install selenium
 
 ```bash
-pip install selenium
+pip3 install selenium --no-cache --user
 ```
 
 
@@ -33,15 +33,9 @@ PCHOME_ACCOUNT = '@gmail.com'
 PCHOME_PASSWORD= ''
 ```
 
-2. un-comment line 74 in `pchome.py`.
-
-```python
-buy_btn.click()
-```
-
-3. Run the script
+2. Run the script
 
 ```bash
-python pchome.py
+python3 pchome.py
 ```
 

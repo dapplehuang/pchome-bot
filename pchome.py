@@ -3,19 +3,23 @@ from selenium.webdriver.common.keys import Keys
 from time import sleep
 from datetime import datetime
 import random
-from account import PCHOME_ACCOUNT, PCHOME_PASSWORD
 
-# test
-PRODUT_WEBSITE = 'https://24h.pchome.com.tw/prod/DAAN8E-A900AIH6O'
-
+# Ringcon
+PRODUT_WEBSITE = 'https://24h.pchome.com.tw/prod/DGBJFE-1900AC6EV'
+# Animal crossing
+# PRODUT_WEBSITE = 'https://24h.pchome.com.tw/cdn/prod/DGBJCW-1900AK4CU-000?fq=/S/DGBJBH'
 # switch
-# PRODUT_WEBSITE = 'https://24h.pchome.com.tw/cdn/prod/DGBJCW-1900AJVIQ-000'
+# PRODUT_WEBSITE = 'https://24h.pchome.com.tw/cdn/prod/DGBJCW-1900AJVIQ-000?fq=/S/DGBJDE'
+# Moving out
+#PRODUT_WEBSITE = "https://24h.pchome.com.tw/prod/DGBJCW-A900AIN4C"
 
 LOGIN_WITH_PAGE= 'https://ecvip.pchome.com.tw/login/v3/login.htm?rurl=' + PRODUT_WEBSITE
 
+PCHOME_ACCOUNT = 'replace with your login email'
+PCHOME_PASSWORD= 'your pchome account password'
 
-START_HOUR = 22
-START_MIN  = '41'
+START_HOUR = 12   # Must be integer
+START_MIN  = "00" # Must be string
 random.seed(datetime.now())
 
 
@@ -36,9 +40,6 @@ class pchomebot():
         self.check_time()
 
         self.driver.refresh()
-
-        
-
 
         # choose gift
         # gift_checkbox = self.driver.find_element_by_xpath('//*[@id="DGBJCW-A900A9YOA"]/div/ul/li[1]/label')
@@ -93,7 +94,7 @@ class pchomebot():
         # confirm to buy ~
         buy_btn = self.driver.find_element_by_xpath('//*[@id="btnSubmit"]') # //*[@id="btnSubmit"]
         print('hi')
-        # buy_btn.click()
+        buy_btn.click()
         # self.safe_click(buy_btn)
         print('done. You did it!!!!!')
         # sleep(2)
